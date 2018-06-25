@@ -1,0 +1,16 @@
+@import '~core/abstracts/abstracts.scss';
+
+.value {
+  height: 20px;
+  width: 100%;
+  border: 2px solid $color_merlin;
+  border-radius: $border_radius;
+
+  &__bar {
+    width: 100%;
+    background-color: $color_bluelagoon;
+    display: inline-block;
+    transition: all .3s;
+    height: 100%;
+  }
+}

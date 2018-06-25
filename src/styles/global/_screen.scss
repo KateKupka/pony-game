@@ -1,0 +1,22 @@
+.screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 2;
+
+  padding: 40px;
+  box-sizing: border-box;
+
+  &.hide {
+    animation: screen_out 2s forwards;
+    z-index: 2;
+
+    .inner-screen {
+      animation: rotate_screen 2s 1s forwards;
+    }
+  }
+}

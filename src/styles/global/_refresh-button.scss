@@ -1,0 +1,15 @@
+#refresh {
+  align-self: flex-start;
+  margin-left: auto;
+  background: url('#{$assets_icons_path}/refresh.png') center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  z-index: 3;
+  :global {
+    animation: rotate_refresh 5s infinite;
+  }
+}

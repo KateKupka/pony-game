@@ -1,0 +1,15 @@
+export default {
+  app: './src/app',
+  // actions: './src/app/actions',
+  // components: './src/app/components',
+  // core: './src/app/core',
+  // pages: './src/components/pages',
+  // public: './src/public',
+  // store: './src/app/store',
+  // styles: './src/app/styles',
+  // data: './src/data',
+  utils: './src/app/utils',
+  config: './src/app/config',
+  components: './src/app/components',
+  assets: './src/assets',
+};

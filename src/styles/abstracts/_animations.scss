@@ -1,0 +1,107 @@
+@keyframes :global(screen_out) {
+  20% {
+    transform: scale(1) translateX(0%);
+  }
+  60% {
+    transform: scale(0.5) translateX(0%);
+  }
+  80% {
+    transform: scale(0.5) translateX(0%);
+  }
+  100% {
+    transform: scale(0.5) translateX(500%);
+  }
+}
+
+@keyframes :global(slide_in) {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes :global(bounce) {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+@keyframes :global(rotate_screen) {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes :global(swing) {
+  0% {
+    transform: translateX(-5%);
+  }
+  50% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(-5%);
+  }
+}
+
+@keyframes :global(swing_reverse) {
+  0% {
+    transform: translateX(5%);
+  }
+  50% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(5%);
+  }
+}
+
+@keyframes float {
+  100% {
+    top: 0%;
+  }
+}
+
+@keyframes :global(rotate) {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes :global(rotate_refresh) {
+  0% {
+    transform: rotate(0deg);
+  }
+  20%, 100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes flash_border {
+  0% {
+    box-shadow: 0px 0px 50px $color_bluelagoon;
+  }
+  50% {
+    box-shadow: 0px 0px 80px $color_bluelagoon;
+  }
+  100% {
+    box-shadow: 0px 0px 50px $color_bluelagoon;
+  }
+}

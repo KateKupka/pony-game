@@ -1,0 +1,32 @@
+@import '~core/abstracts/abstracts.scss';
+
+.character {
+  padding: 40px;
+  background: linear-gradient($color_white2, $color_white6);
+  box-shadow: 20px 38px 34px -26px $color_black2;
+  border-radius: $border_radius;
+  border: solid 2px $color_merlin;
+
+  &__active {
+    animation: flash_border 1.5s infinite;
+  }
+
+  &__skill_selector {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  &__skill {
+    display: block;
+    padding: 20px;
+    border-radius: $border_radius;
+    border: solid 2px $color_merlin;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover{
+      box-shadow: 2px 8px 4px -6px $color_black3;
+    }
+  }
+}

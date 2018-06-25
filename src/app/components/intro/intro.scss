@@ -1,0 +1,52 @@
+@import '~core/abstracts/abstracts.scss';
+
+.intro {
+  width: 100%;
+  height: 100%;
+
+  &__sky, &__ponies {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__ponies {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    top: 100%;
+    animation: float 30s 0.5s forwards;
+  }
+
+  &__pony {
+    display: block;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-basis: 50%;
+    z-index: 2;
+    transform-origin: 50% 0%;
+  }
+
+  &__pony--1 {
+    background-image: url('./../../#{$assets_ponies_path}/pony2.png');
+    :global {
+      animation: rotate 4s infinite;
+    }
+  }
+
+  &__pony--2 {
+    background-image: url('./../../#{$assets_ponies_path}/pony3.png');
+    :global {
+      animation: rotate 5s 3s infinite;
+    }
+  }
+
+  &__pony--3 {
+    background-image: url('./../../#{$assets_ponies_path}/pony4.png');
+    :global {
+      animation: rotate 4s 7s infinite;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import '~core/abstracts/abstracts.scss';
+
+.screen {
+
+  :global {
+    animation: slide_in 2s forwards;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__button {
+    @include large_button();
+  }
+
+  &__button--selected {
+    @include large_button_selected();
+  }
+}

@@ -1,0 +1,49 @@
+.icon {
+  width: 160px;
+  height: 100%;
+  margin: 0px auto;
+  background-image: url('#{$assets_sprites_path}/pony_sprite.png');
+
+  &.basic-pinkiepie {
+    background-position: -517px -696px;
+  }
+
+  &.basic-applejack {
+    background-position: -347px -696px;
+  }
+
+  &.basic-twilight {
+    background-position: -7px -691px;
+  }
+
+  &.dead-pinkiepie {
+    background-position: -517px -183px;
+  }
+
+  &.dead-applejack {
+    background-position: -347px -175px;
+  }
+
+  &.dead-twilight {
+    background-position: -7px -175px;
+  }
+}
+
+.icon-container {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  width: 100%;
+  border-radius: $border_radius;
+  border: solid 2px $color_merlin;
+  margin-bottom: 20px;
+  padding: 3px;
+}
+
+.spin {
+  .icon {
+    :global {
+      animation: rotate_refresh 2s infinite;
+    }
+  }
+}
